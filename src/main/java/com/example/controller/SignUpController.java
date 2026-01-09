@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SignUpController {
 
     private final SignUpService service;
-
+//signup controller 
     @PostMapping("/")
     public ResponseEntity<?> signUp(@Valid @RequestBody SignUpRequest request){
         return ResponseEntity.ok(service.createAccount(request));
